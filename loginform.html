@@ -1,26 +1,60 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>LOGIN</title>
-	</head>
-	<style type="text/css">
-		form{
-			margin-top: 150px;
-			
-		}
-		input{
-			text-align: center;
-		}
-	</style>
-	<body>
-		<center>
-		<form action="" method="">
-			Username:<br>
-			<input type="text" name="user" placeholder="Enter Username"><br>
-			Password:<br>
-			<input type="text" name="pass" placeholder="Enter Password"><br>
-			<input type="submit" name="submit" value="LogIn">
-		</form>
-	</center>
-	</body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page Design With bootstrap and CSS--</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <!-- CSS-->
+<style>
+    .col-md-7{
+        margin-top: 150px;
+        margin-left: 24%;
+    }
+    body{
+        background-image: url(Poster3.jpg);
+        background-size: cover;
+    }
+.card-header{
+    background-color: darkorange;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    
+}
+.btn:hover{
+    background-color: darkblue;
+}
+</style>
+
+    <!-- CSS-->
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+            <div class="card">
+                <div class="card-header"><marquee behavior="alternate" direction="left">Login Here...</marquee></div>
+                <div class="card-body">
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <label for="username">Username:</label>
+                            <input type="text" name="username" class="form-control" placeholder="Enter Username..." required />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" class="form-control" placeholder="Enter Email..." required />
+                        </div>
+                        <input type="submit" name="submit" value="Login" class="btn btn-primary form-control">
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    
+</body>
 </html>
